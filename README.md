@@ -1,0 +1,1 @@
+This repo is based on https://github.com/SinaLab/ArabicNER implementation. The system was developed as part of the WojoodNER Shared Task, designed to tackle both flat and nested Arabic NER tasks using advanced machine learning techniques.
