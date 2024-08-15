@@ -1,0 +1,73 @@
+{
+    "output_path": "nested_res/QARIB_CE_var_lr2e-5/",
+    "train_path": "data/nested/train.txt",
+    "val_path": "data/nested/val.txt",
+    "test_path": "data/Wojood_test_set.txt",
+    "bert_model": "aubmindlab/bert-base-arabertv2",
+    "gpus": [
+        2
+    ],
+    "log_interval": 1052,
+    "batch_size": 16,
+    "num_workers": 0,
+    "data_config": {
+        "fn": "arabiner.data.datasets.NestedTagsDataset",
+        "kwargs": {
+            "max_seq_len": 512
+        }
+    },
+    "trainer_config": {
+        "fn": "arabiner.trainers.BertNestedTrainer",
+        "kwargs": {
+            "max_epochs": 15
+        }
+    },
+    "network_config": {
+        "fn": "arabiner.nn.BertNestedTagger",
+        "kwargs": {
+            "dropout": 0.1,
+            "bert_model": "qarib/bert-base-qarib",
+            "num_labels": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        }
+    },
+    "optimizer": {
+        "fn": "torch.optim.AdamW",
+        "kwargs": {
+            "lr": 2e-05
+        }
+    },
+    "lr_scheduler": {
+        "fn": "torch.optim.lr_scheduler.ExponentialLR",
+        "kwargs": {
+            "gamma": 1
+        }
+    },
+    "loss": {
+        "fn": "torch.nn.CrossEntropyLoss",
+        "kwargs": {}
+    },
+    "overwrite": false,
+    "seed": 3407
+}

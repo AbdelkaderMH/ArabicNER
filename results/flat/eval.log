@@ -1,0 +1,33 @@
+INFO	torch.distributed.nn.jit.instantiator	Sun, 23 Jul 2023 14:13:39	Created a temporary directory at /tmp/tmpfwteibno
+INFO	torch.distributed.nn.jit.instantiator	Sun, 23 Jul 2023 14:13:39	Writing /tmp/tmpfwteibno/_remote_module_non_scriptable.py
+INFO	arabiner.trainers.BaseTrainer	Sun, 23 Jul 2023 14:13:42	Loading checkpoint new_flat_res/arbert-v2_UnifiedLoss_valCE_lr2e-5/checkpoints/checkpoint_1.pt
+INFO	arabiner.utils.data	Sun, 23 Jul 2023 14:13:48	196 batches found
+INFO	root	Sun, 23 Jul 2023 14:13:58	Predictions written to results/flat/predictions_falt_val.txt
+INFO	root	Sun, 23 Jul 2023 14:13:59	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.0000    0.0000    0.0000      1567
+       EVENT     0.0000    0.0000    0.0000       253
+         FAC     0.0000    0.0000    0.0000        85
+         GPE     0.0000    0.0000    0.0000      1132
+    LANGUAGE     0.0000    0.0000    0.0000        15
+         LAW     0.0000    0.0000    0.0000        44
+         LOC     0.0000    0.0000    0.0000        63
+       MONEY     0.0000    0.0000    0.0000        20
+        NORP     0.0462    0.0246    0.0321       488
+         OCC     0.0000    0.0000    0.0000       544
+     ORDINAL     0.0036    0.0024    0.0029       410
+         ORG     0.0444    0.0013    0.0025      1566
+     PERCENT     0.0000    0.0000    0.0000        13
+        PERS     0.0108    0.0031    0.0048       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.0000    0.0000    0.0000         3
+        TIME     0.0000    0.0000    0.0000        55
+     WEBSITE     0.0000    0.0000    0.0000        45
+
+   micro avg     0.0106    0.0024    0.0039      7141
+   macro avg     0.0052    0.0016    0.0021      7141
+weighted avg     0.0141    0.0024    0.0033      7141
+

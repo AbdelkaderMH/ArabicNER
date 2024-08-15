@@ -1,0 +1,73 @@
+{
+    "output_path": "flat_res/CamelBERT_MIX_MTN_CE_lr2e-5/",
+    "train_path": "data/flat/falt_train.txt",
+    "val_path": "data/flat/falt_val.txt",
+    "test_path": "data/Wojood_test_set.txt",
+    "bert_model": "aubmindlab/bert-base-arabertv2",
+    "gpus": [
+        1
+    ],
+    "log_interval": 1052,
+    "batch_size": 16,
+    "num_workers": 0,
+    "data_config": {
+        "fn": "arabiner.data.datasets.NestedTagsDataset",
+        "kwargs": {
+            "max_seq_len": 512
+        }
+    },
+    "trainer_config": {
+        "fn": "arabiner.trainers.BertMTNTrainer",
+        "kwargs": {
+            "max_epochs": 15
+        }
+    },
+    "network_config": {
+        "fn": "arabiner.nn.BertMTNTagger",
+        "kwargs": {
+            "dropout": 0.1,
+            "bert_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix",
+            "num_labels": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                3,
+                4
+            ]
+        }
+    },
+    "optimizer": {
+        "fn": "torch.optim.AdamW",
+        "kwargs": {
+            "lr": 2e-05
+        }
+    },
+    "lr_scheduler": {
+        "fn": "torch.optim.lr_scheduler.ExponentialLR",
+        "kwargs": {
+            "gamma": 1
+        }
+    },
+    "loss": {
+        "fn": "torch.nn.CrossEntropyLoss",
+        "kwargs": {}
+    },
+    "overwrite": false,
+    "seed": 3407
+}

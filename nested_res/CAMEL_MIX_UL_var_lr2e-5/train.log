@@ -1,0 +1,966 @@
+INFO	__main__	Sat, 05 Aug 2023 19:44:26	Writing config to nested_res/CAMEL_MIX_UL_var_lr2e-5/args.json
+INFO	arabiner.utils.data	Sat, 05 Aug 2023 19:44:27	1052 batches found
+INFO	arabiner.utils.data	Sat, 05 Aug 2023 19:44:27	196 batches found
+INFO	arabiner.utils.data	Sat, 05 Aug 2023 19:44:27	375 batches found
+INFO	torch.distributed.nn.jit.instantiator	Sat, 05 Aug 2023 19:44:27	Created a temporary directory at /tmp/tmp1jbkpva_
+INFO	torch.distributed.nn.jit.instantiator	Sat, 05 Aug 2023 19:44:27	Writing /tmp/tmp1jbkpva_/_remote_module_non_scriptable.py
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:47:48	Epoch 0 | Batch 1052/1052 | Timestep 1052 | LR 0.0000186667 | Loss 3.289498
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:47:48	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 19:48:18	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.6888    0.9071    0.7830       183
+        CURR     0.7600    0.9048    0.8261        21
+        DATE     0.9152    0.9257    0.9204      1656
+       EVENT     0.7300    0.7191    0.7245       267
+         FAC     0.5733    0.7748    0.6590       111
+         GPE     0.9380    0.9528    0.9453      2159
+    LANGUAGE     0.0000    0.0000    0.0000        15
+         LAW     0.4270    0.8636    0.5714        44
+         LOC     0.5152    0.6711    0.5829        76
+       MONEY     0.4688    0.7500    0.5769        20
+        NORP     0.5680    0.7308    0.6392       520
+         OCC     0.7978    0.8080    0.8029       547
+     ORDINAL     0.9452    0.9246    0.9348       504
+         ORG     0.8531    0.8979    0.8749      1831
+     PERCENT     0.5000    0.8462    0.6286        13
+        PERS     0.9241    0.8671    0.8947       730
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.0556    0.6667    0.1026         3
+        TIME     0.0000    0.0000    0.0000        55
+        UNIT     0.0625    0.6667    0.1143         3
+     WEBSITE     0.1067    0.1778    0.1333        45
+
+   micro avg     0.8364    0.8793    0.8573      8808
+   macro avg     0.5157    0.6693    0.5579      8808
+weighted avg     0.8475    0.8793    0.8613      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:48:29	Epoch 0 | Timestep 1052 | Train Loss 4.071264 | Val Loss 3.218570 | F1 0.857317
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:48:29	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 19:49:06	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 19:49:30	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:49:52	Epoch 0 | Timestep 1052 | Test Loss 8.673010 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 19:49:52	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_0.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:53:37	Epoch 1 | Batch 1052/1052 | Timestep 2104 | LR 0.0000173333 | Loss 3.439957
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:53:37	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 19:54:08	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8333    0.8470    0.8401       183
+        CURR     0.8261    0.9048    0.8636        21
+        DATE     0.9313    0.9420    0.9367      1656
+       EVENT     0.6747    0.7378    0.7048       267
+         FAC     0.5476    0.8288    0.6595       111
+         GPE     0.9390    0.9546    0.9467      2159
+    LANGUAGE     0.5217    0.8000    0.6316        15
+         LAW     0.6909    0.8636    0.7677        44
+         LOC     0.6437    0.7368    0.6871        76
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.6461    0.7654    0.7007       520
+         OCC     0.8074    0.8355    0.8212       547
+     ORDINAL     0.9219    0.9603    0.9407       504
+         ORG     0.8850    0.9203    0.9023      1831
+     PERCENT     0.9286    1.0000    0.9630        13
+        PERS     0.9152    0.9164    0.9158       730
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.5000    0.6667    0.5714         3
+        TIME     0.4342    0.6000    0.5038        55
+        UNIT     1.0000    0.6667    0.8000         3
+     WEBSITE     0.3944    0.6222    0.4828        45
+
+   micro avg     0.8639    0.9058    0.8843      8808
+   macro avg     0.7054    0.7819    0.7357      8808
+weighted avg     0.8710    0.9058    0.8872      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:54:19	Epoch 1 | Timestep 2104 | Train Loss 2.683188 | Val Loss 3.141374 | F1 0.884332
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:54:19	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 19:54:56	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 19:55:19	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:55:40	Epoch 1 | Timestep 2104 | Test Loss 12.324996 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 19:55:40	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_1.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:59:28	Epoch 2 | Batch 1052/1052 | Timestep 3156 | LR 0.0000160000 | Loss 3.338452
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 19:59:28	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 19:59:59	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8071    0.8689    0.8368       183
+        CURR     0.9500    0.9048    0.9268        21
+        DATE     0.9435    0.9481    0.9458      1656
+       EVENT     0.7417    0.7528    0.7472       267
+         FAC     0.7458    0.7928    0.7686       111
+         GPE     0.9420    0.9634    0.9526      2159
+    LANGUAGE     0.6842    0.8667    0.7647        15
+         LAW     0.7600    0.8636    0.8085        44
+         LOC     0.7089    0.7368    0.7226        76
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.7116    0.7308    0.7211       520
+         OCC     0.8360    0.8483    0.8421       547
+     ORDINAL     0.9450    0.9544    0.9497       504
+         ORG     0.9128    0.9088    0.9108      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9224    0.9288    0.9256       730
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.5000    0.6667    0.5714         3
+        TIME     0.5063    0.7273    0.5970        55
+        UNIT     0.7500    1.0000    0.8571         3
+     WEBSITE     0.3028    0.7333    0.4286        45
+
+   micro avg     0.8875    0.9082    0.8977      8808
+   macro avg     0.7354    0.8117    0.7660      8808
+weighted avg     0.8929    0.9082    0.8998      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:00:10	Epoch 2 | Timestep 3156 | Train Loss 2.584941 | Val Loss 3.116106 | F1 0.897705
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:00:10	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:00:46	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:01:10	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:01:31	Epoch 2 | Timestep 3156 | Test Loss 13.971606 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:01:31	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_2.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:05:14	Epoch 3 | Batch 1052/1052 | Timestep 4208 | LR 0.0000146667 | Loss 3.375349
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:05:14	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:05:43	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8368    0.8689    0.8525       183
+        CURR     0.9500    0.9048    0.9268        21
+        DATE     0.9457    0.9457    0.9457      1656
+       EVENT     0.7196    0.7978    0.7567       267
+         FAC     0.7323    0.8378    0.7815       111
+         GPE     0.9484    0.9620    0.9552      2159
+    LANGUAGE     0.6500    0.8667    0.7429        15
+         LAW     0.7500    0.8864    0.8125        44
+         LOC     0.6264    0.7500    0.6826        76
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.6672    0.7827    0.7204       520
+         OCC     0.8442    0.8519    0.8480       547
+     ORDINAL     0.9416    0.9603    0.9509       504
+         ORG     0.8987    0.9301    0.9141      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9404    0.9288    0.9345       730
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     0.4000    0.6667    0.5000         3
+        TIME     0.6842    0.7091    0.6964        55
+        UNIT     0.7500    1.0000    0.8571         3
+     WEBSITE     0.5952    0.5556    0.5747        45
+
+   micro avg     0.8891    0.9168    0.9027      8808
+   macro avg     0.7644    0.8312    0.7934      8808
+weighted avg     0.8928    0.9168    0.9042      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:05:55	Epoch 3 | Timestep 4208 | Train Loss 2.533350 | Val Loss 3.106112 | F1 0.902739
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:05:55	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:06:32	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:06:55	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:07:16	Epoch 3 | Timestep 4208 | Test Loss 15.243211 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:07:16	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_3.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:10:57	Epoch 4 | Batch 1052/1052 | Timestep 5260 | LR 0.0000133333 | Loss 3.039707
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:10:57	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:11:27	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8503    0.8689    0.8595       183
+        CURR     0.9091    0.9524    0.9302        21
+        DATE     0.9481    0.9481    0.9481      1656
+       EVENT     0.7528    0.7640    0.7584       267
+         FAC     0.6797    0.7838    0.7280       111
+         GPE     0.9535    0.9588    0.9561      2159
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.8478    0.8864    0.8667        44
+         LOC     0.6667    0.7368    0.7000        76
+       MONEY     0.7391    0.8500    0.7907        20
+        NORP     0.7309    0.7731    0.7514       520
+         OCC     0.8523    0.8647    0.8584       547
+     ORDINAL     0.9489    0.9583    0.9536       504
+         ORG     0.9085    0.9328    0.9205      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9306    0.9370    0.9338       730
+     PRODUCT     0.2857    0.4000    0.3333         5
+    QUANTITY     0.3333    0.6667    0.4444         3
+        TIME     0.7143    0.7273    0.7207        55
+        UNIT     1.0000    1.0000    1.0000         3
+     WEBSITE     0.6905    0.6444    0.6667        45
+
+   micro avg     0.9011    0.9167    0.9088      8808
+   macro avg     0.7883    0.8343    0.8076      8808
+weighted avg     0.9027    0.9167    0.9095      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:11:38	Epoch 4 | Timestep 5260 | Train Loss 2.509423 | Val Loss 3.097673 | F1 0.908825
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:11:38	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:12:14	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:12:38	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:13:00	Epoch 4 | Timestep 5260 | Test Loss 12.775890 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:13:00	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_4.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:16:42	Epoch 5 | Batch 1052/1052 | Timestep 6312 | LR 0.0000120000 | Loss 2.843955
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:16:42	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:17:13	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8232    0.8907    0.8556       183
+        CURR     1.0000    1.0000    1.0000        21
+        DATE     0.9507    0.9553    0.9530      1656
+       EVENT     0.7304    0.8015    0.7643       267
+         FAC     0.6818    0.8108    0.7407       111
+         GPE     0.9521    0.9662    0.9591      2159
+    LANGUAGE     0.7222    0.8667    0.7879        15
+         LAW     0.8667    0.8864    0.8764        44
+         LOC     0.7403    0.7500    0.7451        76
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.7220    0.7942    0.7564       520
+         OCC     0.8453    0.8793    0.8620       547
+     ORDINAL     0.9488    0.9563    0.9526       504
+         ORG     0.9189    0.9339    0.9263      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9365    0.9493    0.9429       730
+     PRODUCT     0.3750    0.6000    0.4615         5
+    QUANTITY     0.2000    0.3333    0.2500         3
+        TIME     0.7500    0.7091    0.7290        55
+        UNIT     0.6000    1.0000    0.7500         3
+     WEBSITE     0.6327    0.6889    0.6596        45
+
+   micro avg     0.9014    0.9254    0.9132      8808
+   macro avg     0.7700    0.8391    0.7991      8808
+weighted avg     0.9040    0.9254    0.9143      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:17:25	Epoch 5 | Timestep 6312 | Train Loss 2.432191 | Val Loss 2.922939 | F1 0.913226
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:17:25	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:18:01	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:18:25	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+        UNIT     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:18:48	Epoch 5 | Timestep 6312 | Test Loss 12.952471 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:18:48	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_5.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:22:29	Epoch 6 | Batch 1052/1052 | Timestep 7364 | LR 0.0000106667 | Loss 1.940560
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:22:29	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:23:00	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8750    0.8798    0.8774       183
+        CURR     0.7895    0.7143    0.7500        21
+        DATE     0.9564    0.9541    0.9553      1656
+       EVENT     0.7664    0.7865    0.7763       267
+         FAC     0.6765    0.8288    0.7449       111
+         GPE     0.9558    0.9620    0.9589      2159
+    LANGUAGE     0.0000    0.0000    0.0000        15
+         LAW     0.9048    0.8636    0.8837        44
+         LOC     0.7568    0.7368    0.7467        76
+       MONEY     0.6316    0.6000    0.6154        20
+        NORP     0.7309    0.7731    0.7514       520
+         OCC     0.8383    0.8720    0.8548       547
+     ORDINAL     0.9473    0.9623    0.9547       504
+         ORG     0.9090    0.9279    0.9184      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9273    0.9438    0.9355       730
+     PRODUCT     0.6000    0.6000    0.6000         5
+    QUANTITY     1.0000    0.6667    0.8000         3
+        TIME     0.7917    0.6909    0.7379        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6579    0.5556    0.6024        45
+
+   micro avg     0.9050    0.9167    0.9108      8808
+   macro avg     0.7483    0.7294    0.7364      8808
+weighted avg     0.9041    0.9167    0.9101      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:23:12	Epoch 6 | Timestep 7364 | Train Loss 2.082973 | Val Loss 2.008099 | F1 0.910773
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:23:12	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:23:48	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:24:11	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:24:33	Epoch 6 | Timestep 7364 | Test Loss 8.490736 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:24:33	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_6.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:28:16	Epoch 7 | Batch 1052/1052 | Timestep 8416 | LR 0.0000093333 | Loss 1.007007
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:28:16	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:28:46	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8368    0.8689    0.8525       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9519    0.9559    0.9539      1656
+       EVENT     0.7545    0.7828    0.7684       267
+         FAC     0.7099    0.8378    0.7686       111
+         GPE     0.9494    0.9648    0.9570      2159
+    LANGUAGE     1.0000    0.8667    0.9286        15
+         LAW     0.8864    0.8864    0.8864        44
+         LOC     0.7534    0.7237    0.7383        76
+       MONEY     0.8500    0.8500    0.8500        20
+        NORP     0.7257    0.8038    0.7628       520
+         OCC     0.8493    0.8757    0.8623       547
+     ORDINAL     0.9563    0.9563    0.9563       504
+         ORG     0.9160    0.9356    0.9257      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9415    0.9479    0.9447       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     1.0000    0.6667    0.8000         3
+        TIME     0.6897    0.7273    0.7080        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6750    0.6000    0.6353        45
+
+   micro avg     0.9053    0.9243    0.9147      8808
+   macro avg     0.8149    0.8096    0.8096      8808
+weighted avg     0.9066    0.9243    0.9151      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:28:58	Epoch 7 | Timestep 8416 | Train Loss 1.248779 | Val Loss 1.646164 | F1 0.914668
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:28:58	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:29:35	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:29:58	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:30:19	Epoch 7 | Timestep 8416 | Test Loss 10.595058 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:30:19	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_7.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:34:03	Epoch 8 | Batch 1052/1052 | Timestep 9468 | LR 0.0000080000 | Loss 1.500181
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:34:03	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:34:34	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8526    0.8852    0.8686       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9571    0.9571    0.9571      1656
+       EVENT     0.7402    0.7790    0.7591       267
+         FAC     0.7521    0.8198    0.7845       111
+         GPE     0.9525    0.9667    0.9595      2159
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.8667    0.8864    0.8764        44
+         LOC     0.7671    0.7368    0.7517        76
+       MONEY     0.8636    0.9500    0.9048        20
+        NORP     0.7133    0.8038    0.7559       520
+         OCC     0.8566    0.8848    0.8705       547
+     ORDINAL     0.9568    0.9663    0.9615       504
+         ORG     0.9205    0.9295    0.9250      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9387    0.9438    0.9413       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     0.0000    0.0000    0.0000         3
+        TIME     0.7708    0.6727    0.7184        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6458    0.6889    0.6667        45
+
+   micro avg     0.9078    0.9247    0.9162      8808
+   macro avg     0.7690    0.7852    0.7762      8808
+weighted avg     0.9091    0.9247    0.9166      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:34:45	Epoch 8 | Timestep 9468 | Train Loss 0.991355 | Val Loss 1.455721 | F1 0.916198
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:34:45	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:35:22	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:35:45	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:36:07	Epoch 8 | Timestep 9468 | Test Loss 11.660402 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:36:07	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_8.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:39:50	Epoch 9 | Batch 1052/1052 | Timestep 10520 | LR 0.0000066667 | Loss 1.139541
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:39:50	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:40:20	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8722    0.8579    0.8650       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9525    0.9559    0.9542      1656
+       EVENT     0.7535    0.8015    0.7768       267
+         FAC     0.7419    0.8288    0.7830       111
+         GPE     0.9526    0.9685    0.9605      2159
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7971    0.7237    0.7586        76
+       MONEY     0.9000    0.9000    0.9000        20
+        NORP     0.7323    0.7942    0.7620       520
+         OCC     0.8489    0.8830    0.8656       547
+     ORDINAL     0.9399    0.9623    0.9510       504
+         ORG     0.9242    0.9328    0.9285      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9290    0.9507    0.9397       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     0.5000    0.3333    0.4000         3
+        TIME     0.7959    0.7091    0.7500        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6410    0.5556    0.5952        45
+
+   micro avg     0.9087    0.9251    0.9168      8808
+   macro avg     0.7938    0.7945    0.7924      8808
+weighted avg     0.9093    0.9251    0.9169      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:40:31	Epoch 9 | Timestep 10520 | Train Loss 0.742984 | Val Loss 1.142955 | F1 0.916793
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:40:32	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:41:08	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:41:32	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:41:53	Epoch 9 | Timestep 10520 | Test Loss 10.718338 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:41:53	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_9.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:45:34	Epoch 10 | Batch 1052/1052 | Timestep 11572 | LR 0.0000053333 | Loss 0.731542
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:45:34	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:46:06	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8689    0.8689    0.8689       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9484    0.9547    0.9515      1656
+       EVENT     0.7354    0.8015    0.7670       267
+         FAC     0.7258    0.8108    0.7660       111
+         GPE     0.9581    0.9643    0.9612      2159
+    LANGUAGE     0.8667    0.8667    0.8667        15
+         LAW     0.8478    0.8864    0.8667        44
+         LOC     0.7941    0.7105    0.7500        76
+       MONEY     0.9000    0.9000    0.9000        20
+        NORP     0.7356    0.8077    0.7699       520
+         OCC     0.8488    0.8720    0.8602       547
+     ORDINAL     0.9528    0.9623    0.9576       504
+         ORG     0.9109    0.9377    0.9241      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9350    0.9452    0.9401       730
+     PRODUCT     0.8000    0.8000    0.8000         5
+    QUANTITY     1.0000    0.3333    0.5000         3
+        TIME     0.8043    0.6727    0.7327        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6562    0.4667    0.5455        45
+
+   micro avg     0.9070    0.9236    0.9152      8808
+   macro avg     0.8233    0.7864    0.7954      8808
+weighted avg     0.9078    0.9236    0.9153      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:46:17	Epoch 10 | Timestep 11572 | Train Loss 0.590835 | Val Loss 1.036769 | F1 0.915228
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:46:17	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:46:53	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:47:16	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:47:37	Epoch 10 | Timestep 11572 | Test Loss 11.551855 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:47:37	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_10.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:51:19	Epoch 11 | Batch 1052/1052 | Timestep 12624 | LR 0.0000040000 | Loss 0.766306
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:51:19	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:51:49	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8785    0.8689    0.8736       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9554    0.9571    0.9563      1656
+       EVENT     0.7110    0.8015    0.7535       267
+         FAC     0.7739    0.8018    0.7876       111
+         GPE     0.9564    0.9648    0.9606      2159
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.9524    0.9091    0.9302        44
+         LOC     0.7917    0.7500    0.7703        76
+       MONEY     0.8500    0.8500    0.8500        20
+        NORP     0.7433    0.8019    0.7715       520
+         OCC     0.8359    0.8848    0.8597       547
+     ORDINAL     0.9473    0.9623    0.9547       504
+         ORG     0.9141    0.9356    0.9247      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9363    0.9466    0.9414       730
+     PRODUCT     0.8000    0.8000    0.8000         5
+    QUANTITY     0.5000    0.3333    0.4000         3
+        TIME     0.8222    0.6727    0.7400        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.6571    0.5111    0.5750        45
+
+   micro avg     0.9082    0.9247    0.9164      8808
+   macro avg     0.8018    0.7891    0.7935      8808
+weighted avg     0.9091    0.9247    0.9166      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:52:01	Epoch 11 | Timestep 12624 | Train Loss 0.493454 | Val Loss 0.940292 | F1 0.916404
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:52:01	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:52:38	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:53:01	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:53:22	Epoch 11 | Timestep 12624 | Test Loss 10.654529 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:53:22	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_11.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:57:05	Epoch 12 | Batch 1052/1052 | Timestep 13676 | LR 0.0000026667 | Loss 0.314267
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:57:05	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 20:57:36	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8656    0.8798    0.8726       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9526    0.9583    0.9554      1656
+       EVENT     0.7439    0.8052    0.7734       267
+         FAC     0.8000    0.8288    0.8142       111
+         GPE     0.9544    0.9685    0.9614      2159
+    LANGUAGE     0.7647    0.8667    0.8125        15
+         LAW     0.8864    0.8864    0.8864        44
+         LOC     0.7917    0.7500    0.7703        76
+       MONEY     0.8500    0.8500    0.8500        20
+        NORP     0.7531    0.8096    0.7804       520
+         OCC     0.8541    0.8885    0.8710       547
+     ORDINAL     0.9511    0.9643    0.9576       504
+         ORG     0.9136    0.9361    0.9247      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9324    0.9452    0.9388       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     0.5000    0.3333    0.4000         3
+        TIME     0.8043    0.6727    0.7327        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.7297    0.6000    0.6585        45
+
+   micro avg     0.9100    0.9277    0.9188      8808
+   macro avg     0.7959    0.7950    0.7935      8808
+weighted avg     0.9104    0.9277    0.9188      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:57:47	Epoch 12 | Timestep 13676 | Train Loss 0.406647 | Val Loss 0.893168 | F1 0.918761
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:57:47	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 20:58:24	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 20:58:47	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 20:59:09	Epoch 12 | Timestep 13676 | Test Loss 13.674342 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 20:59:09	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_12.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:02:52	Epoch 13 | Batch 1052/1052 | Timestep 14728 | LR 0.0000013333 | Loss 0.419104
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:02:52	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 21:03:22	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8840    0.8743    0.8791       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9543    0.9583    0.9563      1656
+       EVENT     0.7172    0.7978    0.7553       267
+         FAC     0.7458    0.7928    0.7686       111
+         GPE     0.9574    0.9676    0.9625      2159
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.8864    0.8864    0.8864        44
+         LOC     0.7917    0.7500    0.7703        76
+       MONEY     0.8500    0.8500    0.8500        20
+        NORP     0.7372    0.8038    0.7691       520
+         OCC     0.8432    0.8848    0.8635       547
+     ORDINAL     0.9546    0.9603    0.9575       504
+         ORG     0.9132    0.9361    0.9245      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9363    0.9466    0.9414       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     1.0000    0.6667    0.8000         3
+        TIME     0.8043    0.6727    0.7327        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.7250    0.6444    0.6824        45
+
+   micro avg     0.9083    0.9263    0.9172      8808
+   macro avg     0.8181    0.8101    0.8115      8808
+weighted avg     0.9094    0.9263    0.9176      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:03:34	Epoch 13 | Timestep 14728 | Train Loss 0.384770 | Val Loss 0.887341 | F1 0.917205
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:03:34	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 21:04:10	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 21:04:35	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:04:56	Epoch 13 | Timestep 14728 | Test Loss 15.656134 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 21:04:56	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_13.pt
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:08:39	Epoch 14 | Batch 1052/1052 | Timestep 15780 | LR 0.0000000000 | Loss 0.723682
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:08:39	** Evaluating on validation dataset **
+INFO	root	Sat, 05 Aug 2023 21:09:10	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8939    0.8743    0.8840       183
+        CURR     1.0000    0.9524    0.9756        21
+        DATE     0.9543    0.9583    0.9563      1656
+       EVENT     0.7345    0.7978    0.7648       267
+         FAC     0.7778    0.8198    0.7982       111
+         GPE     0.9561    0.9685    0.9623      2159
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.8864    0.8864    0.8864        44
+         LOC     0.8028    0.7500    0.7755        76
+       MONEY     0.8500    0.8500    0.8500        20
+        NORP     0.7394    0.8077    0.7721       520
+         OCC     0.8514    0.8903    0.8704       547
+     ORDINAL     0.9545    0.9583    0.9564       504
+         ORG     0.9162    0.9377    0.9269      1831
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9350    0.9452    0.9401       730
+     PRODUCT     0.6667    0.8000    0.7273         5
+    QUANTITY     1.0000    0.6667    0.8000         3
+        TIME     0.8043    0.6727    0.7327        55
+        UNIT     0.0000    0.0000    0.0000         3
+     WEBSITE     0.7105    0.6000    0.6506        45
+
+   micro avg     0.9106    0.9273    0.9189      8808
+   macro avg     0.8213    0.8097    0.8128      8808
+weighted avg     0.9114    0.9273    0.9191      8808
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:09:21	Epoch 14 | Timestep 15780 | Train Loss 0.383318 | Val Loss 0.885179 | F1 0.918889
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:09:21	** Validation improved, evaluating test data **
+INFO	root	Sat, 05 Aug 2023 21:09:57	Predictions written to nested_res/CAMEL_MIX_UL_var_lr2e-5/predictions.txt
+INFO	root	Sat, 05 Aug 2023 21:10:21	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertNestedTrainer	Sat, 05 Aug 2023 21:10:43	Epoch 14 | Timestep 15780 | Test Loss 15.781465 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sat, 05 Aug 2023 21:10:43	Saving checkpoint to nested_res/CAMEL_MIX_UL_var_lr2e-5/checkpoints/checkpoint_14.pt

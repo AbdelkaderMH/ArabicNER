@@ -1,0 +1,346 @@
+INFO	__main__	Sun, 06 Aug 2023 10:51:54	Writing config to flat_res/QARIB_MTN_CE_lr2e-5/args.json
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 10:51:54	1052 batches found
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 10:51:54	196 batches found
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 10:51:54	375 batches found
+INFO	torch.distributed.nn.jit.instantiator	Sun, 06 Aug 2023 10:51:55	Created a temporary directory at /tmp/tmpy4y4xjos
+INFO	torch.distributed.nn.jit.instantiator	Sun, 06 Aug 2023 10:51:55	Writing /tmp/tmpy4y4xjos/_remote_module_non_scriptable.py
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:54:20	Epoch 0 | Batch 1052/1052 | Timestep 1052 | LR 0.0000186667 | Loss 0.392919
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:54:20	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 10:54:35	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.7410    0.6758    0.7069       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9139    0.9279    0.9208      1567
+       EVENT     0.5387    0.7154    0.6146       253
+         FAC     0.5794    0.7294    0.6458        85
+         GPE     0.8558    0.8648    0.8603      1132
+    LANGUAGE     0.9091    0.6667    0.7692        15
+         LAW     0.7308    0.8636    0.7917        44
+         LOC     0.5283    0.4444    0.4828        63
+       MONEY     0.8095    0.8500    0.8293        20
+        NORP     0.6355    0.6824    0.6581       488
+         OCC     0.8018    0.8327    0.8170       544
+     ORDINAL     0.8961    0.9049    0.9005       410
+         ORG     0.8084    0.8972    0.8505      1566
+     PERCENT     0.0000    0.0000    0.0000        13
+        PERS     0.9087    0.9185    0.9135       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.0000    0.0000    0.0000         3
+        TIME     0.7143    0.2727    0.3947        55
+     WEBSITE     0.1905    0.0889    0.1212        45
+
+   micro avg     0.8167    0.8500    0.8330      7141
+   macro avg     0.5781    0.5668    0.5638      7141
+weighted avg     0.8171    0.8500    0.8314      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:54:35	Epoch 0 | Timestep 1052 | Train Loss 0.848137 | Val Loss 0.221224 | F1 0.833047
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:54:35	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 10:55:04	Predictions written to flat_res/QARIB_MTN_CE_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 10:55:05	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:55:06	Epoch 0 | Timestep 1052 | Test Loss 1.042113 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 10:55:06	Saving checkpoint to flat_res/QARIB_MTN_CE_lr2e-5/checkpoints/checkpoint_0.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:57:34	Epoch 1 | Batch 1052/1052 | Timestep 2104 | LR 0.0000173333 | Loss 0.027649
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:57:34	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 10:57:49	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8675    0.7912    0.8276       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9143    0.9528    0.9331      1567
+       EVENT     0.6808    0.6996    0.6901       253
+         FAC     0.6782    0.6941    0.6860        85
+         GPE     0.8758    0.8843    0.8800      1132
+    LANGUAGE     0.7368    0.9333    0.8235        15
+         LAW     0.7708    0.8409    0.8043        44
+         LOC     0.5694    0.6508    0.6074        63
+       MONEY     0.5769    0.7500    0.6522        20
+        NORP     0.5849    0.7623    0.6619       488
+         OCC     0.8073    0.8548    0.8304       544
+     ORDINAL     0.8719    0.9463    0.9076       410
+         ORG     0.8718    0.9029    0.8871      1566
+     PERCENT     0.9091    0.7692    0.8333        13
+        PERS     0.9133    0.9400    0.9265       650
+     PRODUCT     1.0000    0.2000    0.3333         5
+    QUANTITY     1.0000    0.3333    0.5000         3
+        TIME     0.6667    0.7636    0.7119        55
+     WEBSITE     0.3611    0.2889    0.3210        45
+
+   micro avg     0.8382    0.8819    0.8595      7141
+   macro avg     0.7328    0.6979    0.6909      7141
+weighted avg     0.8427    0.8819    0.8608      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:57:50	Epoch 1 | Timestep 2104 | Train Loss 0.347307 | Val Loss 0.174743 | F1 0.859502
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:57:50	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 10:58:17	Predictions written to flat_res/QARIB_MTN_CE_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 10:58:19	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 10:58:20	Epoch 1 | Timestep 2104 | Test Loss 1.162158 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 10:58:20	Saving checkpoint to flat_res/QARIB_MTN_CE_lr2e-5/checkpoints/checkpoint_1.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:00:48	Epoch 2 | Batch 1052/1052 | Timestep 3156 | LR 0.0000160000 | Loss 0.027069
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:00:48	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:01:02	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8571    0.8571    0.8571       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9335    0.9496    0.9415      1567
+       EVENT     0.6678    0.7787    0.7190       253
+         FAC     0.6408    0.7765    0.7021        85
+         GPE     0.8858    0.8701    0.8779      1132
+    LANGUAGE     0.7368    0.9333    0.8235        15
+         LAW     0.6949    0.9318    0.7961        44
+         LOC     0.6515    0.6825    0.6667        63
+       MONEY     0.6400    0.8000    0.7111        20
+        NORP     0.6996    0.7111    0.7053       488
+         OCC     0.8333    0.8732    0.8528       544
+     ORDINAL     0.8940    0.9463    0.9194       410
+         ORG     0.8769    0.9100    0.8931      1566
+     PERCENT     0.7692    0.7692    0.7692        13
+        PERS     0.9004    0.9462    0.9227       650
+     PRODUCT     0.5000    0.4000    0.4444         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.7593    0.7455    0.7523        55
+     WEBSITE     0.3830    0.4000    0.3913        45
+
+   micro avg     0.8571    0.8863    0.8715      7141
+   macro avg     0.6995    0.7474    0.7206      7141
+weighted avg     0.8589    0.8863    0.8720      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:01:03	Epoch 2 | Timestep 3156 | Train Loss 0.307478 | Val Loss 0.172278 | F1 0.871463
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:01:03	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 11:01:31	Predictions written to flat_res/QARIB_MTN_CE_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 11:01:32	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:01:33	Epoch 2 | Timestep 3156 | Test Loss 1.287254 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 11:01:33	Saving checkpoint to flat_res/QARIB_MTN_CE_lr2e-5/checkpoints/checkpoint_2.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:04:01	Epoch 3 | Batch 1052/1052 | Timestep 4208 | LR 0.0000146667 | Loss 0.455302
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:04:01	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:04:16	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8533    0.8626    0.8579       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9281    0.9560    0.9418      1567
+       EVENT     0.6964    0.7708    0.7317       253
+         FAC     0.6735    0.7765    0.7213        85
+         GPE     0.8753    0.9055    0.8901      1132
+    LANGUAGE     0.7778    0.9333    0.8485        15
+         LAW     0.7455    0.9318    0.8283        44
+         LOC     0.7121    0.7460    0.7287        63
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.6724    0.7152    0.6931       488
+         OCC     0.8319    0.8640    0.8476       544
+     ORDINAL     0.9106    0.9439    0.9269       410
+         ORG     0.8897    0.9068    0.8982      1566
+     PERCENT     1.0000    0.8462    0.9167        13
+        PERS     0.9250    0.9492    0.9370       650
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     1.0000    1.0000    1.0000         3
+        TIME     0.7544    0.7818    0.7679        55
+     WEBSITE     0.4634    0.4222    0.4419        45
+
+   micro avg     0.8626    0.8936    0.8778      7141
+   macro avg     0.7441    0.7781    0.7594      7141
+weighted avg     0.8637    0.8936    0.8782      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:04:17	Epoch 3 | Timestep 4208 | Train Loss 0.220219 | Val Loss 0.174110 | F1 0.877837
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:06:39	Epoch 4 | Batch 1052/1052 | Timestep 5260 | LR 0.0000133333 | Loss 0.003623
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:06:39	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:06:53	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8462    0.8462    0.8462       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9331    0.9521    0.9425      1567
+       EVENT     0.7007    0.7866    0.7412       253
+         FAC     0.6055    0.7765    0.6804        85
+         GPE     0.8864    0.8958    0.8910      1132
+    LANGUAGE     0.7895    1.0000    0.8824        15
+         LAW     0.7843    0.9091    0.8421        44
+         LOC     0.6818    0.7143    0.6977        63
+       MONEY     0.7727    0.8500    0.8095        20
+        NORP     0.6735    0.7398    0.7051       488
+         OCC     0.8221    0.8750    0.8477       544
+     ORDINAL     0.8989    0.9537    0.9254       410
+         ORG     0.8694    0.9138    0.8910      1566
+     PERCENT     0.6667    0.6154    0.6400        13
+        PERS     0.9158    0.9538    0.9344       650
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.6935    0.7818    0.7350        55
+     WEBSITE     0.5405    0.4444    0.4878        45
+
+   micro avg     0.8563    0.8957    0.8756      7141
+   macro avg     0.7074    0.7537    0.7283      7141
+weighted avg     0.8583    0.8957    0.8763      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:06:54	Epoch 4 | Timestep 5260 | Train Loss 0.302849 | Val Loss 0.179634 | F1 0.875565
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:09:16	Epoch 5 | Batch 1052/1052 | Timestep 6312 | LR 0.0000120000 | Loss 0.001989
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:09:16	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:09:31	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8596    0.8407    0.8500       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9471    0.9477    0.9474      1567
+       EVENT     0.7975    0.7628    0.7798       253
+         FAC     0.5849    0.7294    0.6492        85
+         GPE     0.8946    0.9072    0.9009      1132
+    LANGUAGE     0.7500    1.0000    0.8571        15
+         LAW     0.8200    0.9318    0.8723        44
+         LOC     0.7424    0.7778    0.7597        63
+       MONEY     0.8182    0.9000    0.8571        20
+        NORP     0.7239    0.7520    0.7377       488
+         OCC     0.8310    0.8676    0.8489       544
+     ORDINAL     0.9194    0.9463    0.9327       410
+         ORG     0.9003    0.9112    0.9057      1566
+     PERCENT     0.9167    0.8462    0.8800        13
+        PERS     0.9232    0.9431    0.9330       650
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.8039    0.7455    0.7736        55
+     WEBSITE     0.4894    0.5111    0.5000        45
+
+   micro avg     0.8794    0.8947    0.8870      7141
+   macro avg     0.7394    0.7694    0.7526      7141
+weighted avg     0.8808    0.8947    0.8875      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:09:31	Epoch 5 | Timestep 6312 | Train Loss 0.294555 | Val Loss 0.180209 | F1 0.886992
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:11:53	Epoch 6 | Batch 1052/1052 | Timestep 7364 | LR 0.0000106667 | Loss 0.419747
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:11:53	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:12:08	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8571    0.8571    0.8571       182
+        CURR     1.0000    1.0000    1.0000         1
+        DATE     0.9207    0.9630    0.9414      1567
+       EVENT     0.6494    0.7905    0.7130       253
+         FAC     0.6633    0.7647    0.7104        85
+         GPE     0.8964    0.8869    0.8917      1132
+    LANGUAGE     0.7500    1.0000    0.8571        15
+         LAW     0.8039    0.9318    0.8632        44
+         LOC     0.5926    0.7619    0.6667        63
+       MONEY     0.9000    0.9000    0.9000        20
+        NORP     0.6150    0.7725    0.6848       488
+         OCC     0.8218    0.8732    0.8467       544
+     ORDINAL     0.9044    0.9463    0.9249       410
+         ORG     0.8812    0.9144    0.8975      1566
+     PERCENT     0.8462    0.8462    0.8462        13
+        PERS     0.9152    0.9462    0.9304       650
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     0.7500    1.0000    0.8571         3
+        TIME     0.6615    0.7818    0.7167        55
+     WEBSITE     0.5106    0.5333    0.5217        45
+
+   micro avg     0.8489    0.9000    0.8737      7141
+   macro avg     0.7670    0.8435    0.8013      7141
+weighted avg     0.8549    0.9000    0.8760      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:12:09	Epoch 6 | Timestep 7364 | Train Loss 0.305651 | Val Loss 0.185451 | F1 0.873709
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:14:30	Epoch 7 | Batch 1052/1052 | Timestep 8416 | LR 0.0000093333 | Loss 0.358278
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:14:30	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:14:45	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8667    0.8571    0.8619       182
+        CURR     1.0000    1.0000    1.0000         1
+        DATE     0.9386    0.9566    0.9475      1567
+       EVENT     0.7341    0.7747    0.7538       253
+         FAC     0.6296    0.8000    0.7047        85
+         GPE     0.8985    0.8993    0.8989      1132
+    LANGUAGE     0.8333    1.0000    0.9091        15
+         LAW     0.8000    0.8182    0.8090        44
+         LOC     0.7586    0.6984    0.7273        63
+       MONEY     0.8571    0.9000    0.8780        20
+        NORP     0.6753    0.7500    0.7107       488
+         OCC     0.8378    0.8548    0.8462       544
+     ORDINAL     0.9196    0.9488    0.9340       410
+         ORG     0.8850    0.9093    0.8970      1566
+     PERCENT     0.8462    0.8462    0.8462        13
+        PERS     0.9244    0.9400    0.9321       650
+     PRODUCT     0.4000    0.4000    0.4000         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.7544    0.7818    0.7679        55
+     WEBSITE     0.4634    0.4222    0.4419        45
+
+   micro avg     0.8700    0.8939    0.8818      7141
+   macro avg     0.7845    0.8112    0.7966      7141
+weighted avg     0.8717    0.8939    0.8824      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:14:45	Epoch 7 | Timestep 8416 | Train Loss 0.296822 | Val Loss 0.187018 | F1 0.881752
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:14:45	Early termination triggered

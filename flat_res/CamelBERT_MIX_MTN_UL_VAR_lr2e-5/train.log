@@ -1,0 +1,906 @@
+INFO	__main__	Sun, 06 Aug 2023 11:43:09	Writing config to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/args.json
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 11:43:09	1052 batches found
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 11:43:09	196 batches found
+INFO	arabiner.utils.data	Sun, 06 Aug 2023 11:43:10	375 batches found
+INFO	torch.distributed.nn.jit.instantiator	Sun, 06 Aug 2023 11:43:10	Created a temporary directory at /tmp/tmp2wqnblt4
+INFO	torch.distributed.nn.jit.instantiator	Sun, 06 Aug 2023 11:43:10	Writing /tmp/tmp2wqnblt4/_remote_module_non_scriptable.py
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:46:29	Epoch 0 | Batch 1052/1052 | Timestep 1052 | LR 0.0000186667 | Loss 3.301641
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:46:29	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:46:49	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.7756    0.8736    0.8217       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9129    0.9292    0.9209      1567
+       EVENT     0.6522    0.7115    0.6805       253
+         FAC     0.5437    0.6588    0.5957        85
+         GPE     0.8435    0.8949    0.8684      1132
+    LANGUAGE     0.0000    0.0000    0.0000        15
+         LAW     0.0526    0.0455    0.0488        44
+         LOC     0.3333    0.5714    0.4211        63
+       MONEY     0.4595    0.8500    0.5965        20
+        NORP     0.5813    0.7398    0.6510       488
+         OCC     0.8000    0.7868    0.7933       544
+     ORDINAL     0.8921    0.9073    0.8996       410
+         ORG     0.8577    0.9049    0.8807      1566
+     PERCENT     0.1111    0.0769    0.0909        13
+        PERS     0.9146    0.9231    0.9188       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.0000    0.0000    0.0000         3
+        TIME     0.0000    0.0000    0.0000        55
+     WEBSITE     0.0000    0.0000    0.0000        45
+
+   micro avg     0.8156    0.8539    0.8343      7141
+   macro avg     0.4365    0.4937    0.4594      7141
+weighted avg     0.8114    0.8539    0.8311      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:46:49	Epoch 0 | Timestep 1052 | Train Loss 4.102520 | Val Loss 3.298407 | F1 0.834314
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:46:49	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 11:47:25	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 11:47:26	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:47:28	Epoch 0 | Timestep 1052 | Test Loss 8.352859 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 11:47:28	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_0.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:51:11	Epoch 1 | Batch 1052/1052 | Timestep 2104 | LR 0.0000173333 | Loss 3.438986
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:51:11	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:51:30	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8158    0.8516    0.8333       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9176    0.9375    0.9274      1567
+       EVENT     0.7592    0.7352    0.7470       253
+         FAC     0.5702    0.7647    0.6533        85
+         GPE     0.8666    0.9011    0.8835      1132
+    LANGUAGE     0.9167    0.7333    0.8148        15
+         LAW     0.6552    0.8636    0.7451        44
+         LOC     0.5270    0.6190    0.5693        63
+       MONEY     0.7200    0.9000    0.8000        20
+        NORP     0.6525    0.7889    0.7143       488
+         OCC     0.8422    0.8438    0.8430       544
+     ORDINAL     0.9212    0.9415    0.9312       410
+         ORG     0.8954    0.9074    0.9014      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9146    0.9231    0.9188       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.0000    0.0000    0.0000         3
+        TIME     0.5556    0.5455    0.5505        55
+     WEBSITE     0.3571    0.6667    0.4651        45
+
+   micro avg     0.8496    0.8857    0.8673      7141
+   macro avg     0.6443    0.6961    0.6649      7141
+weighted avg     0.8554    0.8857    0.8694      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:51:30	Epoch 1 | Timestep 2104 | Train Loss 2.746041 | Val Loss 3.213065 | F1 0.867270
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:51:30	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 11:52:06	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 11:52:08	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:52:09	Epoch 1 | Timestep 2104 | Test Loss 11.855737 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 11:52:09	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_1.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:55:51	Epoch 2 | Batch 1052/1052 | Timestep 3156 | LR 0.0000160000 | Loss 3.335275
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:55:51	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 11:56:10	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8177    0.8626    0.8396       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9373    0.9451    0.9412      1567
+       EVENT     0.7642    0.7431    0.7535       253
+         FAC     0.6055    0.7765    0.6804        85
+         GPE     0.8745    0.9046    0.8893      1132
+    LANGUAGE     0.7647    0.8667    0.8125        15
+         LAW     0.7037    0.8636    0.7755        44
+         LOC     0.6462    0.6667    0.6562        63
+       MONEY     0.7391    0.8500    0.7907        20
+        NORP     0.7241    0.7152    0.7196       488
+         OCC     0.8408    0.8640    0.8522       544
+     ORDINAL     0.9207    0.9341    0.9274       410
+         ORG     0.9116    0.9087    0.9101      1566
+     PERCENT     0.8667    1.0000    0.9286        13
+        PERS     0.9220    0.9277    0.9248       650
+     PRODUCT     1.0000    0.2000    0.3333         5
+    QUANTITY     0.3333    0.6667    0.4444         3
+        TIME     0.5849    0.5636    0.5741        55
+     WEBSITE     0.6047    0.5778    0.5909        45
+
+   micro avg     0.8731    0.8860    0.8795      7141
+   macro avg     0.7281    0.7418    0.7172      7141
+weighted avg     0.8741    0.8860    0.8796      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:56:10	Epoch 2 | Timestep 3156 | Train Loss 2.642851 | Val Loss 3.193627 | F1 0.879483
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:56:11	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 11:56:47	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 11:56:48	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 11:56:49	Epoch 2 | Timestep 3156 | Test Loss 12.203842 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 11:56:49	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_2.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:00:29	Epoch 3 | Batch 1052/1052 | Timestep 4208 | LR 0.0000146667 | Loss 3.590857
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:00:29	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:00:48	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8595    0.8736    0.8665       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9426    0.9426    0.9426      1567
+       EVENT     0.7733    0.7549    0.7640       253
+         FAC     0.6286    0.7765    0.6947        85
+         GPE     0.8902    0.8807    0.8854      1132
+    LANGUAGE     0.6667    0.8000    0.7273        15
+         LAW     0.8864    0.8864    0.8864        44
+         LOC     0.5529    0.7460    0.6351        63
+       MONEY     0.7778    0.7000    0.7368        20
+        NORP     0.7251    0.7623    0.7433       488
+         OCC     0.8188    0.8474    0.8329       544
+     ORDINAL     0.9313    0.9585    0.9447       410
+         ORG     0.8976    0.9068    0.9022      1566
+     PERCENT     0.9286    1.0000    0.9630        13
+        PERS     0.9204    0.9246    0.9225       650
+     PRODUCT     0.2857    0.4000    0.3333         5
+    QUANTITY     0.3333    0.3333    0.3333         3
+        TIME     0.5957    0.5091    0.5490        55
+     WEBSITE     0.4783    0.7333    0.5789        45
+
+   micro avg     0.8709    0.8859    0.8783      7141
+   macro avg     0.6946    0.7368    0.7121      7141
+weighted avg     0.8743    0.8859    0.8796      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:00:49	Epoch 3 | Timestep 4208 | Train Loss 2.589305 | Val Loss 3.187468 | F1 0.878306
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:00:49	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:01:24	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:01:26	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:01:27	Epoch 3 | Timestep 4208 | Test Loss 16.090986 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:01:27	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_3.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:05:11	Epoch 4 | Batch 1052/1052 | Timestep 5260 | LR 0.0000133333 | Loss 3.084414
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:05:11	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:05:30	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8684    0.9066    0.8871       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9447    0.9477    0.9462      1567
+       EVENT     0.7680    0.7589    0.7634       253
+         FAC     0.6979    0.7882    0.7403        85
+         GPE     0.8666    0.9011    0.8835      1132
+    LANGUAGE     0.7222    0.8667    0.7879        15
+         LAW     0.8667    0.8864    0.8764        44
+         LOC     0.6184    0.7460    0.6763        63
+       MONEY     0.7619    0.8000    0.7805        20
+        NORP     0.7171    0.7582    0.7371       488
+         OCC     0.8204    0.8566    0.8381       544
+     ORDINAL     0.9258    0.9439    0.9348       410
+         ORG     0.9024    0.9151    0.9087      1566
+     PERCENT     0.9286    1.0000    0.9630        13
+        PERS     0.9306    0.9277    0.9291       650
+     PRODUCT     0.4286    0.6000    0.5000         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.7059    0.6545    0.6792        55
+     WEBSITE     0.5745    0.6000    0.5870        45
+
+   micro avg     0.8737    0.8940    0.8837      7141
+   macro avg     0.7358    0.7762    0.7543      7141
+weighted avg     0.8753    0.8940    0.8844      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:05:30	Epoch 4 | Timestep 5260 | Train Loss 2.565196 | Val Loss 3.178384 | F1 0.883721
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:05:30	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:06:06	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:06:07	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:06:09	Epoch 4 | Timestep 5260 | Test Loss 18.239586 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:06:09	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_4.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:09:50	Epoch 5 | Batch 1052/1052 | Timestep 6312 | LR 0.0000120000 | Loss 2.843279
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:09:50	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:10:09	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8770    0.9011    0.8889       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9423    0.9477    0.9450      1567
+       EVENT     0.7804    0.7866    0.7835       253
+         FAC     0.7674    0.7765    0.7719        85
+         GPE     0.8875    0.9125    0.8998      1132
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.8667    0.8864    0.8764        44
+         LOC     0.7042    0.7937    0.7463        63
+       MONEY     0.7619    0.8000    0.7805        20
+        NORP     0.7288    0.7930    0.7596       488
+         OCC     0.8414    0.8676    0.8543       544
+     ORDINAL     0.9373    0.9488    0.9430       410
+         ORG     0.9159    0.9112    0.9136      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9212    0.9354    0.9282       650
+     PRODUCT     0.2857    0.4000    0.3333         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.8222    0.6727    0.7400        55
+     WEBSITE     0.6400    0.7111    0.6737        45
+
+   micro avg     0.8856    0.9010    0.8932      7141
+   macro avg     0.7638    0.7789    0.7701      7141
+weighted avg     0.8873    0.9010    0.8939      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:10:09	Epoch 5 | Timestep 6312 | Train Loss 2.473578 | Val Loss 3.003016 | F1 0.893239
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:10:09	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:10:46	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:10:47	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:10:48	Epoch 5 | Timestep 6312 | Test Loss 12.968072 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:10:48	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_5.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:14:30	Epoch 6 | Batch 1052/1052 | Timestep 7364 | LR 0.0000106667 | Loss 2.292564
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:14:30	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:14:48	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8736    0.8736    0.8736       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9455    0.9521    0.9488      1567
+       EVENT     0.7626    0.7747    0.7686       253
+         FAC     0.6809    0.7529    0.7151        85
+         GPE     0.8959    0.8966    0.8962      1132
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.8667    0.8864    0.8764        44
+         LOC     0.7000    0.7778    0.7368        63
+       MONEY     0.8421    0.8000    0.8205        20
+        NORP     0.7046    0.7869    0.7435       488
+         OCC     0.8284    0.8787    0.8528       544
+     ORDINAL     0.9265    0.9537    0.9399       410
+         ORG     0.8995    0.9259    0.9125      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9325    0.9354    0.9339       650
+     PRODUCT     0.2857    0.4000    0.3333         5
+    QUANTITY     1.0000    1.0000    1.0000         3
+        TIME     0.8000    0.7273    0.7619        55
+     WEBSITE     0.6591    0.6444    0.6517        45
+
+   micro avg     0.8799    0.9020    0.8908      7141
+   macro avg     0.7766    0.7917    0.7831      7141
+weighted avg     0.8821    0.9020    0.8917      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:14:49	Epoch 6 | Timestep 7364 | Train Loss 2.113789 | Val Loss 2.420726 | F1 0.890810
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:14:49	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:15:25	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:15:27	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        CURR     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:15:28	Epoch 6 | Timestep 7364 | Test Loss 10.782726 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:15:28	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_6.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:19:00	Epoch 7 | Batch 1052/1052 | Timestep 8416 | LR 0.0000093333 | Loss 0.970254
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:19:00	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:19:19	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8617    0.8901    0.8757       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9456    0.9541    0.9498      1567
+       EVENT     0.7443    0.7708    0.7573       253
+         FAC     0.7053    0.7882    0.7444        85
+         GPE     0.8908    0.8860    0.8884      1132
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7121    0.7460    0.7287        63
+       MONEY     0.8095    0.8500    0.8293        20
+        NORP     0.7408    0.7848    0.7622       488
+         OCC     0.8247    0.8732    0.8482       544
+     ORDINAL     0.9357    0.9585    0.9470       410
+         ORG     0.8970    0.9227    0.9097      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9241    0.9369    0.9305       650
+     PRODUCT     0.4286    0.6000    0.5000         5
+    QUANTITY     1.0000    0.6667    0.8000         3
+        TIME     0.8163    0.7273    0.7692        55
+     WEBSITE     0.6744    0.6444    0.6591        45
+
+   micro avg     0.8817    0.9006    0.8910      7141
+   macro avg     0.7874    0.7888    0.7853      7141
+weighted avg     0.8826    0.9006    0.8913      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:19:19	Epoch 7 | Timestep 8416 | Train Loss 1.373817 | Val Loss 1.839744 | F1 0.891029
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:19:20	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:19:55	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:19:56	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:19:57	Epoch 7 | Timestep 8416 | Test Loss 11.013647 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:19:57	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_7.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:23:29	Epoch 8 | Batch 1052/1052 | Timestep 9468 | LR 0.0000080000 | Loss 1.139365
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:23:29	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:23:48	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8840    0.8791    0.8815       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9388    0.9496    0.9442      1567
+       EVENT     0.7519    0.8024    0.7763       253
+         FAC     0.6957    0.7529    0.7232        85
+         GPE     0.8908    0.9081    0.8994      1132
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.9302    0.9091    0.9195        44
+         LOC     0.7302    0.7302    0.7302        63
+       MONEY     0.8182    0.9000    0.8571        20
+        NORP     0.7023    0.8074    0.7512       488
+         OCC     0.8299    0.8787    0.8536       544
+     ORDINAL     0.9310    0.9537    0.9422       410
+         ORG     0.9032    0.9234    0.9132      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9287    0.9415    0.9351       650
+     PRODUCT     0.8000    0.8000    0.8000         5
+    QUANTITY     0.5000    0.3333    0.4000         3
+        TIME     0.8085    0.6909    0.7451        55
+     WEBSITE     0.6667    0.6222    0.6437        45
+
+   micro avg     0.8796    0.9053    0.8923      7141
+   macro avg     0.7819    0.7825    0.7806      7141
+weighted avg     0.8814    0.9053    0.8929      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:23:49	Epoch 8 | Timestep 9468 | Train Loss 0.941448 | Val Loss 1.263572 | F1 0.892278
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:23:49	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:24:25	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:24:27	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:24:28	Epoch 8 | Timestep 9468 | Test Loss 9.554376 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:24:28	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_8.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:27:59	Epoch 9 | Batch 1052/1052 | Timestep 10520 | LR 0.0000066667 | Loss 1.239193
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:27:59	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:28:17	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8634    0.8681    0.8658       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9426    0.9528    0.9476      1567
+       EVENT     0.7226    0.7826    0.7514       253
+         FAC     0.7065    0.7647    0.7345        85
+         GPE     0.8871    0.9019    0.8944      1132
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7121    0.7460    0.7287        63
+       MONEY     0.8095    0.8500    0.8293        20
+        NORP     0.7158    0.8053    0.7580       488
+         OCC     0.8365    0.8842    0.8597       544
+     ORDINAL     0.9222    0.9537    0.9376       410
+         ORG     0.9103    0.9202    0.9152      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9275    0.9446    0.9360       650
+     PRODUCT     0.5000    0.8000    0.6154         5
+    QUANTITY     0.3333    0.3333    0.3333         3
+        TIME     0.7547    0.7273    0.7407        55
+     WEBSITE     0.6458    0.6889    0.6667        45
+
+   micro avg     0.8792    0.9048    0.8918      7141
+   macro avg     0.7456    0.7850    0.7631      7141
+weighted avg     0.8812    0.9048    0.8926      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:28:18	Epoch 9 | Timestep 10520 | Train Loss 0.675666 | Val Loss 1.255070 | F1 0.891787
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:28:18	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:28:54	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:28:55	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:28:56	Epoch 9 | Timestep 10520 | Test Loss 15.084223 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:28:57	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_9.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:32:26	Epoch 10 | Batch 1052/1052 | Timestep 11572 | LR 0.0000053333 | Loss 0.588386
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:32:26	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:32:45	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.9040    0.8791    0.8914       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9477    0.9489    0.9483      1567
+       EVENT     0.6962    0.8063    0.7473       253
+         FAC     0.7356    0.7529    0.7442        85
+         GPE     0.8980    0.8940    0.8960      1132
+    LANGUAGE     0.9286    0.8667    0.8966        15
+         LAW     0.9302    0.9091    0.9195        44
+         LOC     0.7705    0.7460    0.7581        63
+       MONEY     0.8571    0.9000    0.8780        20
+        NORP     0.7544    0.7992    0.7761       488
+         OCC     0.8442    0.8768    0.8602       544
+     ORDINAL     0.9161    0.9585    0.9368       410
+         ORG     0.9150    0.9215    0.9182      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9274    0.9431    0.9352       650
+     PRODUCT     0.8000    0.8000    0.8000         5
+    QUANTITY     1.0000    0.3333    0.5000         3
+        TIME     0.8333    0.7273    0.7767        55
+     WEBSITE     0.7500    0.4667    0.5753        45
+
+   micro avg     0.8900    0.9018    0.8959      7141
+   macro avg     0.8204    0.7765    0.7879      7141
+weighted avg     0.8911    0.9018    0.8959      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:32:46	Epoch 10 | Timestep 11572 | Train Loss 0.597677 | Val Loss 0.963759 | F1 0.895875
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:32:46	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:33:22	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:33:23	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:33:24	Epoch 10 | Timestep 11572 | Test Loss 7.952352 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:33:24	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_10.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:36:55	Epoch 11 | Batch 1052/1052 | Timestep 12624 | LR 0.0000040000 | Loss 0.623257
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:36:55	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:37:13	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8936    0.9231    0.9081       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9477    0.9483    0.9480      1567
+       EVENT     0.6862    0.7866    0.7330       253
+         FAC     0.7356    0.7529    0.7442        85
+         GPE     0.8920    0.8975    0.8948      1132
+    LANGUAGE     0.7647    0.8667    0.8125        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7143    0.7143    0.7143        63
+       MONEY     0.8095    0.8500    0.8293        20
+        NORP     0.7410    0.7971    0.7680       488
+         OCC     0.8413    0.8768    0.8587       544
+     ORDINAL     0.9265    0.9537    0.9399       410
+         ORG     0.9083    0.9240    0.9161      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9249    0.9477    0.9362       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     1.0000    0.3333    0.5000         3
+        TIME     0.8077    0.7636    0.7850        55
+     WEBSITE     0.6053    0.5111    0.5542        45
+
+   micro avg     0.8838    0.9028    0.8932      7141
+   macro avg     0.7554    0.7378    0.7376      7141
+weighted avg     0.8846    0.9028    0.8933      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:37:14	Epoch 11 | Timestep 12624 | Train Loss 0.289812 | Val Loss 0.748819 | F1 0.893184
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:37:14	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:37:50	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:37:51	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:37:52	Epoch 11 | Timestep 12624 | Test Loss 10.395660 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:37:52	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_11.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:41:24	Epoch 12 | Batch 1052/1052 | Timestep 13676 | LR 0.0000026667 | Loss 0.104727
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:41:24	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:41:43	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8913    0.9011    0.8962       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9472    0.9496    0.9484      1567
+       EVENT     0.6926    0.8103    0.7468       253
+         FAC     0.7273    0.7529    0.7399        85
+         GPE     0.8965    0.9028    0.8996      1132
+    LANGUAGE     0.8125    0.8667    0.8387        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7705    0.7460    0.7581        63
+       MONEY     0.8571    0.9000    0.8780        20
+        NORP     0.7559    0.7869    0.7711       488
+         OCC     0.8445    0.8787    0.8613       544
+     ORDINAL     0.9286    0.9512    0.9398       410
+         ORG     0.9087    0.9215    0.9150      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9333    0.9477    0.9405       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     1.0000    1.0000    1.0000         3
+        TIME     0.8200    0.7455    0.7810        55
+     WEBSITE     0.6923    0.6000    0.6429        45
+
+   micro avg     0.8879    0.9041    0.8959      7141
+   macro avg     0.7694    0.7785    0.7733      7141
+weighted avg     0.8888    0.9041    0.8962      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:41:44	Epoch 12 | Timestep 13676 | Train Loss 0.200925 | Val Loss 0.746211 | F1 0.895920
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:41:44	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:42:20	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:42:22	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:42:23	Epoch 12 | Timestep 13676 | Test Loss 14.133629 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:42:23	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_12.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:45:53	Epoch 13 | Batch 1052/1052 | Timestep 14728 | LR 0.0000013333 | Loss 0.210961
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:45:53	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:46:12	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8962    0.9011    0.8986       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9479    0.9528    0.9504      1567
+       EVENT     0.7256    0.7945    0.7585       253
+         FAC     0.7586    0.7765    0.7674        85
+         GPE     0.8948    0.9019    0.8984      1132
+    LANGUAGE     0.7647    0.8667    0.8125        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7797    0.7302    0.7541        63
+       MONEY     0.8571    0.9000    0.8780        20
+        NORP     0.7345    0.7992    0.7655       488
+         OCC     0.8503    0.8768    0.8633       544
+     ORDINAL     0.9286    0.9512    0.9398       410
+         ORG     0.9083    0.9240    0.9161      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9318    0.9462    0.9389       650
+     PRODUCT     0.2500    0.2000    0.2222         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.8542    0.7455    0.7961        55
+     WEBSITE     0.7000    0.6222    0.6588        45
+
+   micro avg     0.8886    0.9055    0.8969      7141
+   macro avg     0.7679    0.7732    0.7697      7141
+weighted avg     0.8895    0.9055    0.8972      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:46:13	Epoch 13 | Timestep 14728 | Train Loss 0.180123 | Val Loss 0.737291 | F1 0.896934
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:46:13	** Validation improved, evaluating test data **
+INFO	root	Sun, 06 Aug 2023 12:46:48	Predictions written to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/predictions.txt
+INFO	root	Sun, 06 Aug 2023 12:46:50	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.0000    0.0000    0.0000         0
+        DATE     0.0000    0.0000    0.0000         0
+       EVENT     0.0000    0.0000    0.0000         0
+         FAC     0.0000    0.0000    0.0000         0
+         GPE     0.0000    0.0000    0.0000         0
+    LANGUAGE     0.0000    0.0000    0.0000         0
+         LAW     0.0000    0.0000    0.0000         0
+         LOC     0.0000    0.0000    0.0000         0
+       MONEY     0.0000    0.0000    0.0000         0
+        NORP     0.0000    0.0000    0.0000         0
+         OCC     0.0000    0.0000    0.0000         0
+     ORDINAL     0.0000    0.0000    0.0000         0
+         ORG     0.0000    0.0000    0.0000         0
+     PERCENT     0.0000    0.0000    0.0000         0
+        PERS     0.0000    0.0000    0.0000         0
+     PRODUCT     0.0000    0.0000    0.0000         0
+    QUANTITY     0.0000    0.0000    0.0000         0
+        TIME     0.0000    0.0000    0.0000         0
+     WEBSITE     0.0000    0.0000    0.0000         0
+
+   micro avg     0.0000    0.0000    0.0000         0
+   macro avg     0.0000    0.0000    0.0000         0
+weighted avg     0.0000    0.0000    0.0000         0
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:46:51	Epoch 13 | Timestep 14728 | Test Loss 15.016177 | F1 0.000000
+INFO	arabiner.trainers.BaseTrainer	Sun, 06 Aug 2023 12:46:51	Saving checkpoint to flat_res/CamelBERT_MIX_MTN_UL_VAR_lr2e-5/checkpoints/checkpoint_13.pt
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:50:20	Epoch 14 | Batch 1052/1052 | Timestep 15780 | LR 0.0000000000 | Loss 0.519827
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:50:20	** Evaluating on validation dataset **
+INFO	root	Sun, 06 Aug 2023 12:50:38	
+              precision    recall  f1-score   support
+
+    CARDINAL     0.8846    0.8846    0.8846       182
+        CURR     0.0000    0.0000    0.0000         1
+        DATE     0.9479    0.9521    0.9500      1567
+       EVENT     0.7123    0.8024    0.7546       253
+         FAC     0.7416    0.7765    0.7586        85
+         GPE     0.8940    0.9011    0.8975      1132
+    LANGUAGE     0.8667    0.8667    0.8667        15
+         LAW     0.9091    0.9091    0.9091        44
+         LOC     0.7541    0.7302    0.7419        63
+       MONEY     0.8571    0.9000    0.8780        20
+        NORP     0.7443    0.7992    0.7708       488
+         OCC     0.8472    0.8768    0.8618       544
+     ORDINAL     0.9287    0.9537    0.9410       410
+         ORG     0.9090    0.9246    0.9167      1566
+     PERCENT     1.0000    1.0000    1.0000        13
+        PERS     0.9332    0.9462    0.9396       650
+     PRODUCT     0.0000    0.0000    0.0000         5
+    QUANTITY     0.6667    0.6667    0.6667         3
+        TIME     0.8200    0.7455    0.7810        55
+     WEBSITE     0.7027    0.5778    0.6341        45
+
+   micro avg     0.8879    0.9049    0.8963      7141
+   macro avg     0.7560    0.7606    0.7576      7141
+weighted avg     0.8887    0.9049    0.8965      7141
+
+INFO	arabiner.trainers.BertMTNTrainer	Sun, 06 Aug 2023 12:50:39	Epoch 14 | Timestep 15780 | Train Loss 0.180511 | Val Loss 0.738558 | F1 0.896317
